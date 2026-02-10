@@ -1,3 +1,164 @@
-<h1>승정</h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior PM Portfolio | 키즈 콘텐츠 전문가 SJbaek</title>
+    <style>
+        :root {
+            --primary-color: #6C5CE7; /* 신뢰와 창의성을 주는 보라색 */
+            --accent-color: #FF9F43;  /* 활기찬 키즈 느낌의 오렌지 */
+            --text-dark: #2d3436;
+            --bg-light: #f1f2f6;
+        }
 
-<p>devsj003</p>
+        body {
+            font-family: 'Pretendard', -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin: 0;
+            background-color: #fff;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #a29bfe 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+        .tag {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        section { padding: 50px 0; border-bottom: 1px solid #eee; }
+        h2 { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); display: inline-block; margin-bottom: 30px; }
+
+        /* Project Card */
+        .card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .stats { display: flex; gap: 15px; margin-top: 15px; }
+        .stat-badge {
+            background: white;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: var(--primary-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* PRD Section */
+        .prd-box {
+            background: #ffffff;
+            border: 1px solid #dfe6e9;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+        }
+        .prd-label { color: #eb4d4b; font-weight: bold; }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        footer { text-align: center; padding: 50px; color: #b2bec3; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <span class="tag">10+ Years Experience</span>
+        <h1>아이들의 즐거움과 부모의 안심을 설계하는<br>PM [이름]입니다.</h1>
+        <p>키즈 콘텐츠 플랫폼 전문가 | 서비스 기획 | 데이터 기반 의사결정</p>
+    </div>
+</header>
+
+<div class="container">
+    
+    <section>
+        <h2>Expertise</h2>
+        <p>단순한 트래픽 증가를 넘어, <strong>아동 발달 단계에 맞춘 UX</strong>와 <strong>글로벌 보안 규정(COPPA/GDPR)</strong>을 준수하는 지속 가능한 키즈 생태계를 만듭니다. 비즈니스 수익성과 사용자의 교육적 가치 사이의 최적점을 찾는 데 강점이 있습니다.</p>
+    </section>
+
+    <section>
+        <h2>Key Projects</h2>
+        
+        <div class="card">
+            <h3>🚀 발달 단계별 개인화 추천 엔진 도입</h3>
+            <p>조회수 중심 추천에서 아동 연령별 인지 발달 단계에 맞춘 추천 알고리즘으로 개편</p>
+            <div class="stats">
+                <div class="stat-badge">CTR +15%</div>
+                <div class="stat-badge">유료 구독 리텐션 +12%</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ 키즈 세이프티 가이드라인 구축</h3>
+            <p>유해 콘텐츠 필터링 시스템 및 부모 안심 대시보드(사용 시간 관리) 기획</p>
+            <div class="stats">
+                <div class="stat-badge">CSAT 92% 달성</div>
+                <div class="stat-badge">민원 발생률 -30%</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sample PRD</h2>
+        <div class="prd-box">
+            <p><span class="prd-label">[문서명]</span> 발달 단계 기반 추천 엔진 도입 건</p>
+            <hr>
+            <p><strong>1. 가설:</strong> 아이의 연령에 맞지 않는 콘텐츠 노출을 줄이면 부모의 서비스 신뢰도가 높아져 결제 유지율이 상승할 것이다.</p>
+            <p><strong>2. 핵심 요구사항:</strong>
+                <ul>
+                    <li>유아/소아/학령기 3단계 세그먼트 분류</li>
+                    <li>교육 전문가 검수 태그 기반 가중치 부여</li>
+                    <li>비로그인 유저를 위한 연령 선택 팝업 UX 최적화</li>
+                </ul>
+            </p>
+            <p><strong>3. PM's Insight:</strong> "트래픽 손실을 감수하고도 '안전한 콘텐츠' 위주로 노출한 결과, 장기적인 LTV(고객 생애 가치)가 개선됨을 증명함."</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Specialized Skills</h2>
+        <div class="skills">
+            <div>
+                <strong>Domain</strong>
+                <p>Kids UX, Gamification, Edutech Strategy, Global Compliance</p>
+            </div>
+            <div>
+                <strong>Tools</strong>
+                <p>Figma, Amplitude, SQL, Jira/Confluence</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="border:none; text-align: center;">
+        <h2>Contact</h2>
+        <p>📧 email@example.com | 🔗 <a href="#">LinkedIn</a> | 📝 <a href="#">Blog</a></p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 SJbaek. Built with GitHub Pages.</p>
+</footer>
+
+</body>
+</html>
